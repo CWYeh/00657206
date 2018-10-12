@@ -1,24 +1,591 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uig-Av-77c">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Table View Controller-->
+        <scene sceneID="8fo-UP-9iD">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="BUQ-dt-4rh" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="DiU-1X-XZt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="m20-TO-w1Z">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="495" id="Kf9-ff-VeD">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="495"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kf9-ff-VeD" id="Sqy-KX-kBc">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="494.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="螢幕快照 2018-10-12 上午10.19.53" translatesAutoresizingMaskIntoConstraints="NO" id="nzb-FF-4O2">
+                                                    <rect key="frame" x="-18" y="0.0" width="411" height="539"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Spz-mg-F0p" kind="show" id="7n0-eV-ogm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="495" id="fcv-Sp-sgn">
+                                        <rect key="frame" x="0.0" y="495" width="375" height="495"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fcv-Sp-sgn" id="xaI-hf-ZJl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="494.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="螢幕快照 2018-10-12 上午11.26.31" translatesAutoresizingMaskIntoConstraints="NO" id="ZIW-Ru-Co7">
+                                                    <rect key="frame" x="-121" y="0.0" width="617" height="556"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="KRh-6f-H0i" kind="show" id="yWq-XT-Cdv"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="BUQ-dt-4rh" id="41m-TD-LSG"/>
+                            <outlet property="delegate" destination="BUQ-dt-4rh" id="RDR-Q3-YPP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="1eK-7X-lJL"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8hw-MU-q3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1754" y="-244"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Yu9-sF-4um">
+            <objects>
+                <tableViewController id="lyL-9w-sLB" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ewu-SM-j9S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="fAF-9e-0zN">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="805" id="6OC-3D-T8S">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="805"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6OC-3D-T8S" id="cdW-o1-FEe">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="804.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="螢幕快照 2018-10-12 上午11.15.04" translatesAutoresizingMaskIntoConstraints="NO" id="0tf-wn-tRL">
+                                                    <rect key="frame" x="-49" y="0.0" width="502" height="229"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="螢幕快照 2018-10-12 上午11.15.22" translatesAutoresizingMaskIntoConstraints="NO" id="22t-3d-uRB">
+                                                    <rect key="frame" x="71" y="230" width="232" height="326"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="螢幕快照 2018-10-12 上午11.15.49" translatesAutoresizingMaskIntoConstraints="NO" id="PcG-yo-8FC">
+                                                    <rect key="frame" x="-5" y="555" width="384" height="250"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="lyL-9w-sLB" id="AnU-XX-J31"/>
+                            <outlet property="delegate" destination="lyL-9w-sLB" id="Y9V-iX-8g2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="dxB-YY-BY2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qQO-gm-0mI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4468" y="-698"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="6x5-KZ-NOm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uig-Av-77c" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="B9C-LY-aFT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nD8-pA-iC8">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BUQ-dt-4rh" kind="relationship" relationship="rootViewController" id="TdL-aV-Qld"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s52-RJ-siA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="-244"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="9n4-0X-PMb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j9F-R0-9aj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Qvv-QC-ptU"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="X23-cX-gvp">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="myN-eV-Xuk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3593" y="-697"/>
+        </scene>
+        <!--劇情簡介-->
+        <scene sceneID="juW-tB-nDt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qsq-lA-emh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="劇情簡介" image="UITabBarBookmarksTemplate" id="4TT-Xl-8Ui"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Iu9-y7-3FW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fau-DU-ccG" kind="relationship" relationship="rootViewController" id="iG2-v2-Kfa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Irg-sH-KUT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3593" y="-1379"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="arR-T5-vKe">
+            <objects>
+                <tableViewController id="fau-DU-ccG" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gWe-YB-q6p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="ej3-QR-qmP">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="737" id="AH9-Mi-Np8">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="737"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AH9-Mi-Np8" id="Te2-RN-ooi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="736.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="螢幕快照 2018-10-12 上午11.10.20" translatesAutoresizingMaskIntoConstraints="NO" id="3i9-MW-2uS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="510"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zjd-Lq-FMl">
+                                                    <rect key="frame" x="16" y="472" width="343" height="331"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">最新電影《猛毒》由《屍樂園》的魯賓弗來舍執導，並找來《黑暗騎士：黎明昇起》英倫男星湯姆哈迪、《大娛樂家》蜜雪兒威廉斯與《星際大戰外傳：俠盜一號》里茲阿邁德等重量級卡司組成黃金陣容，自《蜘蛛人3》出現就備受關注的最強宿敵「猛毒」身為外星有機生命體，需尋找宿主結合才能生存，能賦予宿主超越想像的強大能量，亦正亦邪的角色特質更讓「猛毒」成為漫威漫畫裡最受歡迎的角色之一。
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="fau-DU-ccG" id="BBI-Bv-Cc0"/>
+                            <outlet property="delegate" destination="fau-DU-ccG" id="Q1F-6r-bXB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="g7E-ob-zkt"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zdn-ac-aIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4468" y="-1379"/>
+        </scene>
+        <!--電影介紹-->
+        <scene sceneID="VXj-ZY-EXC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KzP-ca-P8D" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="電影介紹" image="UITabBarMostViewedTemplate" id="uVG-P1-4W7"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ndk-vN-h9o">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3vZ-lQ-bVY" kind="relationship" relationship="rootViewController" id="dgi-GB-dC1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TbZ-n2-RKw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3593" y="-2099"/>
+        </scene>
+        <!--猛毒 Venom-->
+        <scene sceneID="KPf-M0-wR4">
+            <objects>
+                <tableViewController id="3vZ-lQ-bVY" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mvd-X9-crA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="ZNY-8V-AlE">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="625" id="Ulp-ZH-j2O">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="625"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ulp-ZH-j2O" id="LDg-yU-GbK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="624.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="螢幕快照 2018-10-12 上午10.19.53" translatesAutoresizingMaskIntoConstraints="NO" id="v5V-1G-hz2">
+                                                    <rect key="frame" x="68" y="0.0" width="238" height="342"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BO9-iI-2kc">
+                                                    <rect key="frame" x="16" y="347" width="343" height="257"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">猛毒
+Venom
+上映日期：2018-10-03
+片　　長：01時53分
+發行公司：索尼影業
+IMDb分數：7.1
+導演：
+魯賓弗萊舍
+演員：
+湯姆哈迪(Tom Hardy) 、 蜜雪兒威廉斯(Michelle Williams) 、 伍迪哈里遜(Woody Harrelson)</string>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="3vZ-lQ-bVY" id="bW1-AH-WIY"/>
+                            <outlet property="delegate" destination="3vZ-lQ-bVY" id="AhB-b5-7Af"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="猛毒 Venom" id="nLc-ZB-Auq"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GpN-kM-c1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4468" y="-2099.1004497751128"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0id-FM-JzZ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Spz-mg-F0p" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M9M-Hc-iBa">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="KzP-ca-P8D" kind="relationship" relationship="viewControllers" id="OPB-Wd-1OX"/>
+                        <segue destination="qsq-lA-emh" kind="relationship" relationship="viewControllers" id="fes-06-08z"/>
+                        <segue destination="XYw-Ma-s4W" kind="relationship" relationship="viewControllers" id="0MS-PV-YEq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hs8-wJ-MfB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2828" y="-1379"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="lw5-bW-oSk">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="KRh-6f-H0i" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ns3-t1-QUf">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4j4-Ui-flN" kind="relationship" relationship="viewControllers" id="5MP-Wd-tDF"/>
+                        <segue destination="J7X-Cv-qyX" kind="relationship" relationship="viewControllers" id="V8j-SV-Yqp"/>
+                        <segue destination="1ss-Xk-RRQ" kind="relationship" relationship="viewControllers" id="5oi-n9-f8t"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dX6-zc-tPM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2828" y="869"/>
+        </scene>
+        <!--電影介紹-->
+        <scene sceneID="wbC-2Z-AeA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4j4-Ui-flN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="電影介紹" image="UITabBarMostViewedTemplate" id="n7Q-bi-okT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nLx-oQ-beh">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9Fi-6L-MnQ" kind="relationship" relationship="rootViewController" id="2oG-PG-cE6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5y7-f1-Pnv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3593" y="170"/>
+        </scene>
+        <!--劇照-->
+        <scene sceneID="yPJ-xi-bHS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1ss-Xk-RRQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="劇照" image="UITabBarSearchTemplateSelected" id="G9z-ll-Qi7"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oaw-Ue-zfc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cXI-xu-3Or" kind="relationship" relationship="rootViewController" id="FWN-ZZ-JgO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GUh-eW-gNt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3593" y="1545"/>
+        </scene>
+        <!--劇照-->
+        <scene sceneID="wfk-so-qnA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XYw-Ma-s4W" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="劇照" image="UITabBarSearchTemplateSelected" id="Pj7-5K-gfy"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qyf-H3-KkM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lyL-9w-sLB" kind="relationship" relationship="rootViewController" id="0X1-Cv-8hW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8iW-er-GCA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3593" y="-697"/>
+        </scene>
+        <!--劇情簡介-->
+        <scene sceneID="n5D-mU-e5q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J7X-Cv-qyX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="劇情簡介" image="UITabBarBookmarksTemplate" id="N1c-em-evU"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BHU-hp-vc3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gcu-Jv-orl" kind="relationship" relationship="rootViewController" id="l0Q-Y7-SvF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XfS-YC-i0J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3593" y="869"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="qaz-An-4F8">
+            <objects>
+                <tableViewController id="cXI-xu-3Or" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dib-nr-lvb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="PJ7-fb-kAB">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="936" id="2i4-Id-M1d">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="936"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2i4-Id-M1d" id="YZ2-mD-FfO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="935.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="螢幕快照 2018-10-12 上午11.27.19" translatesAutoresizingMaskIntoConstraints="NO" id="2qJ-PQ-EZF">
+                                                    <rect key="frame" x="-49" y="0.0" width="428" height="343"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="螢幕快照 2018-10-12 上午11.27.49" translatesAutoresizingMaskIntoConstraints="NO" id="9Rz-wo-iNg">
+                                                    <rect key="frame" x="-3" y="305" width="380" height="360"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="螢幕快照 2018-10-12 上午11.27.00" translatesAutoresizingMaskIntoConstraints="NO" id="NVM-hZ-qYn">
+                                                    <rect key="frame" x="0.0" y="633" width="375" height="297"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="cXI-xu-3Or" id="Oe3-2O-8Tk"/>
+                            <outlet property="delegate" destination="cXI-xu-3Or" id="nt2-fh-deX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="nci-VR-WQC"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7c-RS-YGj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4468" y="1544.9775112443779"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="rdh-yv-Ado">
+            <objects>
+                <tableViewController id="9Fi-6L-MnQ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Kgk-bF-bBP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="lPt-eN-JiZ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="752" id="nGq-w3-jAM">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="752"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nGq-w3-jAM" id="URl-kb-UxT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="751.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="螢幕快照 2018-10-12 上午11.26.31" translatesAutoresizingMaskIntoConstraints="NO" id="R6a-OU-XKB">
+                                                    <rect key="frame" x="70" y="0.0" width="234" height="350"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqp-IZ-Q63">
+                                                    <rect key="frame" x="16" y="358" width="343" height="270"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">一個巨星的誕生
+A Star Is Born
+劇情
+上映日期：2018-10-09
+片　　長：02時16分
+發行公司：華納兄弟
+IMDb分數：8.5
+導演：
+布萊德利古柏(Bradley Cooper)
+演員：
+女神卡卡(Lady Gaga) 、 布萊德利古柏(Bradley Cooper)
+</string>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="9Fi-6L-MnQ" id="1Kg-Ol-Lkz"/>
+                            <outlet property="delegate" destination="9Fi-6L-MnQ" id="ckZ-I9-mee"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="e2q-ab-7w1"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v4R-NA-fSV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4468" y="170"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="kXD-Ij-Ebc">
+            <objects>
+                <tableViewController id="gcu-Jv-orl" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WMJ-RM-xB9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="KLQ-b2-xQU">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="737" id="fGt-mN-5rR">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="737"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fGt-mN-5rR" id="d64-gN-MwT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="736.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="螢幕快照 2018-10-12 上午11.30.38" translatesAutoresizingMaskIntoConstraints="NO" id="QqD-Ys-OT5">
+                                                    <rect key="frame" x="0.0" y="-53" width="375" height="416"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GwV-5N-83B">
+                                                    <rect key="frame" x="16" y="326" width="343" height="400"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">在《一個巨星的誕生》中，布萊德利庫柏與女神卡卡挾著強大的演技及歌藝攜手合作，來演繹出主人翁傑克與艾莉這一對才華洋溢的藝術家，在舞台上及人生中的結合，及兩人間狂野和熾熱的愛情故事。他倆複雜糾結的戀情充滿動人曲折，從開始的美麗承諾到後期的心痛崩裂，雖遭遇挫折兩人仍努力挽回…
+ 在這重新詮釋的經典愛情故事中，曾四度榮獲奧斯卡提名的布萊德利庫柏（《美國狙擊手》、《瞞天大佈局》、《派特的幸福劇本》）不僅獻出他的執導處女作，更與獲獎無數並榮獲奧斯卡提名的音樂天后女神卡卡攜手演出，這也是女神卡卡首次領銜主演商業大片。庫柏在片中詮釋樂壇老將傑克森緬因，他發掘並愛上努力想在樂壇打下一席之地的艾莉。在遇見傑克前，她本已放棄要成為知名歌手的美夢，然而傑克初次見面就立刻發現她內在無法遮掩的驚人天份。</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="gcu-Jv-orl" id="mdi-u3-omv"/>
+                            <outlet property="delegate" destination="gcu-Jv-orl" id="X7P-r2-8Fm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="XTQ-bm-QFq"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h0A-cW-gBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4468" y="868.51574212893559"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="UITabBarBookmarksTemplate" width="27" height="24"/>
+        <image name="UITabBarMostViewedTemplate" width="23" height="23"/>
+        <image name="UITabBarSearchTemplateSelected" width="25" height="25"/>
+        <image name="螢幕快照 2018-10-12 上午10.19.53" width="238" height="342"/>
+        <image name="螢幕快照 2018-10-12 上午11.10.20" width="489" height="659"/>
+        <image name="螢幕快照 2018-10-12 上午11.15.04" width="714" height="328"/>
+        <image name="螢幕快照 2018-10-12 上午11.15.22" width="516" height="770"/>
+        <image name="螢幕快照 2018-10-12 上午11.15.49" width="446" height="297"/>
+        <image name="螢幕快照 2018-10-12 上午11.26.31" width="234" height="350"/>
+        <image name="螢幕快照 2018-10-12 上午11.27.00" width="547" height="436"/>
+        <image name="螢幕快照 2018-10-12 上午11.27.19" width="542" height="422"/>
+        <image name="螢幕快照 2018-10-12 上午11.27.49" width="533" height="422"/>
+        <image name="螢幕快照 2018-10-12 上午11.30.38" width="792" height="649"/>
+    </resources>
 </document>
